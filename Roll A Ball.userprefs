@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Timer.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="20" Column="3" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="10" Column="17" />
+      <File FileName="Assets\Scripts\Rotator.cs" Line="7" Column="64" />
+      <File FileName="Assets\Scripts\WinDetector.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\Score.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\Enemy2AI.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Enemy3AI.cs" Line="8" Column="59" />
+      <File FileName="Assets\Scripts\Enemy4AI.cs" Line="19" Column="23" />
+      <File FileName="Assets\Scripts\Timer.cs" Line="14" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
