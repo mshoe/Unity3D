@@ -6,9 +6,19 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
 	public float speed;
 	public float strength;
+	public bool onGround = true;
 
 	void Start() {
 		rb = GetComponent<Rigidbody> ();
+	}
+
+	void OnCollisionEnter (Collision col)
+	{
+		if (col.gameObject.CompareTag ("ground")) {
+			onGround = true;
+		} else {
+			onGround = false;
+		}
 	}
 
 	void FixedUpdate ()
@@ -17,7 +27,7 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 		float jump = 0.0f;
 
-		if (Input.GetKeyDown (KeyCode.Space) && (transform.position.y > 0.65f && transform.position.y < 0.7f)) {
+		if (Input.GetKeyDown (KeyCode.Space) && onGround) {
 			jump = 1.0f;
 		}
 

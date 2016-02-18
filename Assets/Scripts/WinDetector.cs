@@ -10,6 +10,9 @@ public class WinDetector : MonoBehaviour {
 		if (col.gameObject.CompareTag ("enemy")) {
 			Destroy (col.gameObject);
 			score += 1;
+		} else if (col.gameObject.CompareTag ("Player")) {
+			Destroy (col.gameObject);
+			score -= 9999;
 		}
 	}
 }
