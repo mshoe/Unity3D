@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	private Rigidbody rb;
+
 	public float speed;
 	public float strength;
 	public bool onGround = true;

@@ -8,6 +8,10 @@ public class Score : MonoBehaviour {
 	Text txt;
 	private int currentScore = 0;
 
+	void Awake() {
+		DontDestroyOnLoad (transform.gameObject);
+	}
+
 	void Start ()
 	{
 		WinDetector = GameObject.Find ("WinDetector");

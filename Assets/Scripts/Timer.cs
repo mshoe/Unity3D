@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class Timer : MonoBehaviour {
 
@@ -11,8 +12,8 @@ public class Timer : MonoBehaviour {
 	void Update () {
 		time += Time.deltaTime;
 
-		var minutes = time / 60;
-		var seconds = time % 60;
+		var minutes = Math.Floor(time / 60);
+		var seconds = Math.Floor(time % 60);
 		var fraction = (time * 100) % 100;
 
 		timerLabel.text = string.Format ("{0:00} : {1:00} : {2:000}", minutes, seconds, fraction);
